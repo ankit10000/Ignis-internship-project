@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {FcLike, FcLikePlaceholder} from 'react-icons/fc'
 import { Link } from 'react-router-dom'
 import { MdOutlineFileUpload } from "react-icons/md";
+import HelloWorld from './HelloWorld';
 function Dashboard() {
     function LikeButton() {
         const[liked, setLiked] = useState(false);
@@ -32,7 +33,7 @@ function Dashboard() {
                         <Link className="card-link "><MdOutlineFileUpload size="25px"color='black'/></Link>
                         <Link className="card-link m-lg-5 "><LikeButton  /></Link>
                     </div>
-
+                    <HelloWorld />
             </div>
         </div>
     )
